@@ -1,0 +1,66 @@
+/* Use margins and paddings to adjust the spaces between divisions and use the display property to be able to put each block in its proper place. You may need additional CSS properties. */
+
+/* While you do this assignment, please use min-height as well as vertical align to give minimum height to the division and also to vertically align some of the inline-blocks.  Also, please do NOT use float (use display:inline-block instead). */
+
+/* 1hr */
+
+/*CSS reset settings here*/
+* {
+	margin: 0px;
+	padding: 0px;
+}
+#wrapper {
+	width: 950px;
+	background-color: silver;
+	margin: 0px auto;
+
+	/* added  */
+	padding: 20px;
+}
+#header {
+	min-height: 150px;
+	background-color: green;
+
+	/* added */
+	margin-bottom: 20px;
+}
+#navigation {
+	min-height: 300px;
+	width: 200px;
+	background-color: blue;
+
+	/* added */
+	margin-right: 20px;
+}
+#main_content {
+	min-height: 400px;
+	width: 700px;
+	background-color: red;
+	padding-right: 25px;
+
+	/* added */
+}
+.subcontents {
+	min-height: 200px;
+	width: 210px;
+	background-color: yellow;
+
+	/* added */
+	margin: 10px 2px 0 15px;
+
+	display: inline-block;
+}
+#advertisement {
+	min-height: 120px;
+	width: 673px; /*660px*/
+	background-color: purple;
+
+	/* added */
+	margin: 20px 2px 0 15px;
+}
+
+#wrapper #navigation,
+#wrapper #main_content {
+	display: inline-block;
+	vertical-align: top;
+}

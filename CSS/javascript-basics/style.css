@@ -1,0 +1,118 @@
+/* JavaScript Basics
+Recreate the image below using only what you've learned about HTML and CSS. Use display: inline-block/inline/block to do all of these assignments. You can download the image here: JavaScript Basics
+
+Before you submit your work:
+
+Remember that you're here to learn: Don't try to find the original source code of these images.
+Make sure you've validated your HTML.
+Also, do NOT make this responsive. Just make this work for a fixed width (set the width to be 970px).  If you have time during the bootcamp, go through our responsive design course later, but, for now, try to master the CSS principles for fixed width first.  The responsive design course is added at the end of the Web Fundamentals track, and you can do this later in your bootcamp.
+*/
+
+/* reset */
+/* * {
+	vertical-align: baseline;
+	font-weight: inherit;
+	font-family: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	border: 0 none;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+} */
+
+body {
+	background: #1b345d;
+	position: relative;
+}
+
+h1 {
+	color: #c2cadf;
+}
+
+h2 {
+	color: #a8b3c1;
+}
+
+p {
+	color: #95b4cb;
+}
+
+a {
+	color: #5dcede;
+}
+
+span {
+	color: #4e5695;
+}
+
+.container {
+	width: 970px;
+	position: absolute;
+	top: 40px;
+	left: 0;
+	right: 0;
+	bottom: 12px;
+	margin: auto;
+
+	/*0*/
+}
+
+/* -----------------------HEADER--------------------- */
+.header {
+	background: #cf3036;
+	height: 90px;
+	border-radius: 10px;
+	margin-bottom: 20px;
+	padding: 0.1px 0px 0px 20px;
+}
+
+/* -----------------------END HEADER--------------------- */
+.side-menu {
+	background: #2a7d8c;
+	padding: 20px;
+	margin-right: 10px;
+}
+
+.side-menu ul li {
+	color: #fff;
+}
+
+/* -----------------------END SIDE MENU--------------------- */
+
+/* -----------------------MAIN --------------------- */
+.main-content {
+	background: #0e1822;
+	width: 680px;
+	padding: 10px;
+	/* min-height: 200px; */
+}
+
+.main-content ul li {
+	color: #95b4cb;
+	margin-bottom: 10px;
+}
+
+.main-content ul li p {
+	display: inline;
+}
+
+.container .side-menu,
+.container .main-content {
+	display: inline-block;
+	vertical-align: top;
+	border-radius: 10px;
+}
+/* -----------------------END MAIN--------------------- */
+
+/* -----------------------FOOTER--------------------- */
+
+.footer {
+	margin-top: 20px;
+	background: #5d6673;
+	height: 40px;
+	padding: 5px 0px 12px 20px;
+	border-radius: 50px;
+}
+
+/* -----------------------END FOOTER--------------------- */

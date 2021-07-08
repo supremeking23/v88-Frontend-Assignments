@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Form</title>
+		<style>
+			.container {
+				margin-left: 10px;
+			}
+			table {
+				border-spacing: 0px 5px;
+				width: 500px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<h1>Registration Form</h1>
+			<form action="index.php" method="POST">
+				<table>
+					<tr>
+						<td><label for="firstname">First Name</label></td>
+						<td>
+							<input type="text" name="firstname" id="firstname" required />
+						</td>
+					</tr>
+					<tr>
+						<td><label for="lastname">Last Name</label></td>
+						<td>
+							<input type="text" name="lastname" id="lastname" required />
+						</td>
+					</tr>
+					<tr>
+						<td><label for="email">Email </label></td>
+						<td><input type="email" name="email" id="email" required /></td>
+					</tr>
+					<tr>
+						<td><label for="password">Password</label></td>
+						<td>
+							<input type="password" id="password" name="password" required />
+						</td>
+					</tr>
+					<tr>
+						<td><label for="confirm_password">Confirm Password</label></td>
+						<td>
+							<input type="password" id="confirm_password" name="confirm_password" required />
+						</td>
+					</tr>
+
+					<tr>
+						<td colspan="3">
+							<input type="radio" id="male" name="gender" value="male" />
+							<label for="male">Male</label>
+							<input type="radio" id="female" name="gender" value="female" />
+							<label for="female">Female</label>
+							<input type="radio" id="noAnswer" name="gender" value="I prefer not to answer" />
+							<label for="noAnswer">I prefer not to answer</label>
+						</td>
+						<td></td>
+						<td></td>
+					</tr>
+
+					<tr>
+						<td colspan="2">
+							<label for="textarea">A short description about myself:</label><br />
+							<textarea cols="50" rows="10" id="textarea" name="textarea"></textarea>
+						</td>
+						<td></td>
+					</tr>
+
+					<tr>
+						<td><label for="language">Favorite Language</label></td>
+						<td>
+							<select name="language" id="language">
+								<option value="javascript">javascript</option>
+								<option value="Python">Python</option>
+								<option value="c">C</option>
+								<option value="csharp">C#</option>
+								<option value="java">Java</option>
+							</select>
+						</td>
+					</tr>
+
+					<tr>
+						<td colspan="2">
+							<input type="checkbox" name="receive" id="receive" value="0" required />
+							<label for="receive">Yes, I would like to receive periodic email updates</label>
+						</td>
+						<td></td>
+					</tr>
+
+					<tr>
+						<td>
+							<button type="submit" name="submit" value="submit">Create Account</button>
+						</td>
+					</tr>
+				</table>
+			</form>
+			<base href="http://google.com" />
+			<a href="http://google.com">sdsd</a>
+		</div>
+	</body>
+</html>

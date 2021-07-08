@@ -1,0 +1,95 @@
+@default-width: 1400px;
+@container-background: #eeeeee;
+@text-secondary: red;
+@element-text-color: #2500a1; // 4 sa given
+@non-metal: #6f94fe;
+@transition-metal: #fb9b99;
+@noble-gas: #fbd012;
+@lanthanide: #1fce21;
+
+.container {
+	font-family: Arial, Helvetica, sans-serif;
+	width: @default-width;
+	margin: 10px auto;
+	padding: 20px;
+	background: @container-background;
+	div {
+		text-align: center;
+		p {
+			margin: 1px;
+			display: inline-block;
+			vertical-align: top;
+			width: 57px;
+			height: 55px;
+			text-align: center;
+			position: relative;
+			font-size: 14px;
+
+			&.non-metal-element {
+				background: @non-metal;
+				border: 1px solid gray;
+				width: 55px;
+			}
+			&.transition-metal-element {
+				background: @transition-metal;
+				border: 1px solid gray;
+				width: 55px;
+			}
+
+			&.noble-gas-element {
+				background: @noble-gas;
+				border: 1px solid gray;
+				width: 55px;
+			}
+			&.lanthanide-element {
+				background: @lanthanide;
+				border: 1px solid gray;
+				width: 55px;
+			}
+			&.with-single-star {
+				&::before {
+					content: "*";
+					position: absolute;
+					left: -10px;
+					top: 16px;
+					color: @text-secondary;
+				}
+			}
+			&.with-double-star {
+				&::before {
+					content: "**";
+					position: absolute;
+					left: -16px;
+					top: 16px;
+					color: @text-secondary;
+				}
+			}
+
+			&.unified-f-orbital {
+				color: @text-secondary;
+				padding-top: 20px;
+				height: 40px;
+				width: 120px;
+			}
+			&.ml-2 {
+				margin-left: 2em;
+			}
+			span {
+				display: block;
+				font-weight: bold;
+				color: @element-text-color;
+			}
+		}
+	}
+	.horizontal-content-style {
+		p {
+			color: @text-secondary;
+		}
+	}
+
+	.first-item-in-row {
+		color: @text-secondary;
+		padding-top: 20px;
+		height: 40px;
+	}
+}

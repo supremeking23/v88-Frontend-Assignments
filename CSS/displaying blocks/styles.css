@@ -1,0 +1,56 @@
+body {
+	background: #d5d2ae;
+}
+
+/* body * {
+	outline: 1px dotted red;
+} */
+
+.container {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+header {
+	text-align: center;
+}
+
+header img,
+header h1 {
+	display: inline-block;
+	vertical-align: top;
+}
+
+header img {
+	width: 100px;
+}
+
+/* section */
+section {
+	text-align: center;
+}
+section .box {
+	display: inline-block;
+}
+
+.box {
+	border: 5px solid;
+	width: 215px;
+	height: 214px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+.box img {
+	width: 175px;
+	border: 20px solid #82b4ee;
+}
+
+.box.even-items-in-row img {
+	background: #f36870;
+	border: 20px solid #f36870;
+}
+
+.box .increase-img-size {
+	width: 175px;
+	height: 175px;
+}

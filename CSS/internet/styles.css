@@ -1,0 +1,215 @@
+/* https://www.hawkeslearning.com/Accessibility/guides/html_content.html#:~:text=For%20semantic%20purposes%2C%20content%20within,until%20after%20the%20last%20element. */
+body {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* body * {
+	outline: 1px dotted red;
+} */
+
+.container {
+	width: 1200px;
+	margin: 0 auto;
+	/* background: #e6e6e6; */
+	background: rgb(255, 255, 255);
+	background: linear-gradient(0deg, rgba(255, 255, 255, 1) 63%, rgba(230, 230, 230, 1) 100%);
+}
+
+/* header */
+
+header {
+	position: relative;
+	background: #fff;
+	margin-top: 20px;
+	margin-bottom: 60px;
+}
+
+header .header-text {
+	padding: 20px;
+	background: #3d77a6;
+	position: relative;
+	top: 70px;
+}
+
+header .header-text h2 {
+	color: #eaf0f5;
+}
+
+header .globe-container {
+	position: absolute;
+	top: -10px;
+}
+
+header .globe-container img {
+	width: 100px;
+}
+
+header .globe-container h1 span {
+	color: #3d77a6;
+}
+
+header .globe-container img,
+header .globe-container h1 {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+/* end header */
+
+/* sidebar */
+
+.sidebar {
+	width: 300px;
+}
+.sidebar .whats-internet {
+	border-bottom: 1px solid gray;
+	padding: 20px;
+	margin-bottom: 50px;
+}
+
+.sidebar .whats-internet h2 span {
+	color: red;
+}
+
+.sidebar .whats-internet p {
+	font-weight: bold;
+}
+
+.sidebar .whats-internet a {
+	display: block;
+	padding: 10px;
+	text-align: center;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #fff;
+	border-radius: 10px;
+}
+
+.btn-watch-video {
+	background: #3a78ac;
+}
+
+.btn-more-resources {
+	background: #ee8400;
+}
+
+.ninja-container {
+	background: url(./assets/images/ad_background.png);
+	color: #fff;
+	padding: 20px 20px 60px 20px;
+	text-align: center;
+}
+
+.ninja-container img {
+	width: 100px;
+	display: block;
+	margin: 0 auto 30px auto;
+}
+
+.ninja-container a {
+	color: #fff;
+	text-decoration: none;
+	padding: 10px;
+	background: skyblue;
+	border-radius: 10px;
+}
+
+.container .sidebar,
+.container .main-content {
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* end sidebar */
+
+/* main */
+.main-content {
+	/* background: red; */
+	padding: 20px;
+	width: 854px;
+	position: relative;
+}
+
+.main-content .dns-container,
+.main-content .contact-info {
+	display: inline-block;
+}
+
+.main-content .dns-container {
+	position: absolute;
+	top: 10px;
+}
+.main-content .dns-image {
+	width: 25px;
+}
+
+.main-content .dns-container .dns-image,
+.main-content .dns-container h2 {
+	display: inline-block;
+}
+
+.main-content .contact-info {
+	margin-left: 600px;
+	position: relative;
+}
+
+.main-content .contact-info .phone-image {
+	width: 50px;
+	position: absolute;
+	top: 10px;
+	left: -60px;
+}
+
+.main-content .contact-info h2,
+.main-content .contact-info p {
+	margin: 2px 0 2px 0;
+}
+.main-content .clients-servers {
+	border-top: 1px dotted #000;
+	margin-top: 10px;
+}
+.main-content .clients-servers .client-server-image {
+	width: 500px;
+	margin-left: 120px;
+}
+
+/* what-happen-section */
+
+/* the-big-three-section */
+
+.the-big-three-section {
+	-webkit-box-shadow: 0px -3px 1px 5px rgba(76, 183, 199, 1);
+	-moz-box-shadow: 0px -3px 1px 5px rgba(76, 183, 199, 1);
+	box-shadow: 0px -3px 1px 5px rgba(76, 183, 199, 1);
+	padding: 5px 0px 10px 5px;
+}
+
+.the-big-three-section .big-three-image,
+.the-big-three-section .the-big-three-content {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.the-big-three-section .big-three-image {
+	width: 180px;
+}
+
+.the-big-three-section .the-big-three-content {
+	width: 650px;
+	margin-left: 10px;
+}
+
+/* end main content */
+
+/* links */
+.links {
+	color: #4cb7c7;
+	text-decoration: none;
+}
+
+.emphasize {
+	font-weight: bold;
+}
+
+/* end global */
